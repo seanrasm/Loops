@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php
+      $names = array("Push","Through","This","Array","With","A","For","Loop");
+      $index = 0;
+    ?>
   <title><||Loop||></title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,14 +39,20 @@
 <div class="container-fluid bg-1 text-center">
   <h1>Loop || pooL</h1>
   <img src="loopimage.jpeg">
-  <h3 class="wordSpace">Loop Activity</h3>
+<div class="container text-center">
+  <h2 class="wordSpace">Activity</h2>
+  <br>
+  <blockquote>
+  <?php
 
-  <a href="loopactivity.php" class="btn btn-default btn-lg space">
-    <span class="glyphicon glyphicon-send"></span>&nbsp; Begin Loop</a>
+      for ($counter=1; $counter <= 11; $counter++){
+        echo "$names[$index]<br> <hr>";
+        $index = $index + 1;
+      }
+
+   ?>
+ </blockquote>
 </div>
-
-
-
 <div class="container-fluid bg-2 text-center">
 <!--
     <div class="space">
@@ -50,7 +60,9 @@
     <br>
     <h4><a href="https://slack.com/downloads/osx">Message Service</a></h4>
     <br> -->
+
   <h3 class="bottomBye">This is Where We Loop</h3>
+
 </div>
 <br>
 <h4 class="contact contactReduce"><a href="mailto:deathTheKid@protonmail.com?subject=Hola
